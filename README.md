@@ -91,6 +91,12 @@ uninstall.sh                         global uninstaller
 LICENSE                              MIT
 ```
 
+## Related workflow agents
+
+- [system-modeler](https://github.com/45ck/workflow-agents) - Own use cases, behavioral diagrams, and consistency checks
+- [system-modeler-beads](https://github.com/45ck/workflow-agents) - Track modelling gaps and unresolved inconsistencies
+- [software-architect](https://github.com/45ck/workflow-agents) - Use formal models to support structure decisions
+
 ## Related skill packs
 
 - [business-analysis-skills](https://github.com/45ck/business-analysis-skills) - Business analysis techniques, workflows, and quality checks
