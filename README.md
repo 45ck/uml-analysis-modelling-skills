@@ -93,9 +93,9 @@ LICENSE                              MIT
 
 ## Related workflow agents
 
-- [system-modeler](https://github.com/45ck/workflow-agents) - Own use cases, behavioral diagrams, and consistency checks
-- [system-modeler-beads](https://github.com/45ck/workflow-agents) - Track modelling gaps and unresolved inconsistencies
-- [software-architect](https://github.com/45ck/workflow-agents) - Use formal models to support structure decisions
+- [system-modeler](https://github.com/45ck/skill-harness) - Own use cases, behavioral diagrams, and consistency checks
+- [system-modeler-beads](https://github.com/45ck/skill-harness) - Track modelling gaps and unresolved inconsistencies
+- [software-architect](https://github.com/45ck/skill-harness) - Use formal models to support structure decisions
 
 ## Related skill packs
 
