@@ -1,0 +1,176 @@
+{
+  "name": "uml-analysis-modelling-pack",
+  "version": "0.1.0",
+  "type": "skill-pack",
+  "summary": "UML and analysis modelling pack for Claude Code-style workflows.",
+  "recommended_order": [
+    "scenario-to-uml-transformer",
+    "domain-vs-design-model-differentiator",
+    "use-case-modeler",
+    "use-case-description-writer",
+    "domain-class-modeler",
+    "multiplicity-checker",
+    "activity-diagram-builder",
+    "sequence-diagram-builder",
+    "boundary-control-entity-mapper",
+    "design-class-modeler",
+    "inheritance-abstraction-reviewer",
+    "state-model-builder",
+    "deployment-diagram-drafter",
+    "model-consistency-checker"
+  ],
+  "skills": [
+    {
+      "id": "domain-class-modeler",
+      "path": "skills/domain-class-modeler/SKILL.md",
+      "purpose": "Build a domain class model from narrative requirements by identifying entities, attributes, associations, and multiplicities without prematurely adding implementation detail.",
+      "handoffs": [
+        "multiplicity-checker",
+        "domain-vs-design-model-differentiator",
+        "model-consistency-checker"
+      ]
+    },
+    {
+      "id": "design-class-modeler",
+      "path": "skills/design-class-modeler/SKILL.md",
+      "purpose": "Turn analyzed requirements or domain concepts into a design-level class model with responsibilities, operations, visibility, and collaboration boundaries.",
+      "handoffs": [
+        "boundary-control-entity-mapper",
+        "inheritance-abstraction-reviewer",
+        "model-consistency-checker"
+      ]
+    },
+    {
+      "id": "use-case-modeler",
+      "path": "skills/use-case-modeler/SKILL.md",
+      "purpose": "Identify actors, system boundaries, major goals, and use cases from a brief, then organize them into a coherent use-case model.",
+      "handoffs": [
+        "use-case-description-writer",
+        "activity-diagram-builder",
+        "scenario-to-uml-transformer"
+      ]
+    },
+    {
+      "id": "use-case-description-writer",
+      "path": "skills/use-case-description-writer/SKILL.md",
+      "purpose": "Write structured use-case descriptions with trigger, preconditions, main success scenario, alternate flows, exception flows, and postconditions.",
+      "handoffs": [
+        "activity-diagram-builder",
+        "sequence-diagram-builder",
+        "model-consistency-checker"
+      ]
+    },
+    {
+      "id": "activity-diagram-builder",
+      "path": "skills/activity-diagram-builder/SKILL.md",
+      "purpose": "Translate workflows and use-case flows into activity diagrams that make control flow, branching, concurrency, and handoffs explicit.",
+      "handoffs": [
+        "scenario-to-uml-transformer",
+        "model-consistency-checker",
+        "state-model-builder"
+      ]
+    },
+    {
+      "id": "sequence-diagram-builder",
+      "path": "skills/sequence-diagram-builder/SKILL.md",
+      "purpose": "Model message flow between actors and objects over time so responsibilities and interaction ordering are clear.",
+      "handoffs": [
+        "design-class-modeler",
+        "boundary-control-entity-mapper",
+        "model-consistency-checker"
+      ]
+    },
+    {
+      "id": "state-model-builder",
+      "path": "skills/state-model-builder/SKILL.md",
+      "purpose": "Model the lifecycle of a key entity or subsystem through states, transitions, events, and guards.",
+      "handoffs": [
+        "activity-diagram-builder",
+        "model-consistency-checker",
+        "scenario-to-uml-transformer"
+      ]
+    },
+    {
+      "id": "deployment-diagram-drafter",
+      "path": "skills/deployment-diagram-drafter/SKILL.md",
+      "purpose": "Draft a deployment view showing nodes, execution environments, artifacts, connections, and major runtime placement decisions.",
+      "handoffs": [
+        "design-class-modeler",
+        "model-consistency-checker",
+        "architecture pack later"
+      ]
+    },
+    {
+      "id": "boundary-control-entity-mapper",
+      "path": "skills/boundary-control-entity-mapper/SKILL.md",
+      "purpose": "Separate interface-facing, coordination, and domain responsibilities using boundary, control, and entity thinking.",
+      "handoffs": [
+        "design-class-modeler",
+        "sequence-diagram-builder",
+        "model-consistency-checker"
+      ]
+    },
+    {
+      "id": "multiplicity-checker",
+      "path": "skills/multiplicity-checker/SKILL.md",
+      "purpose": "Review class associations for realistic cardinality, optionality, composition, and ownership semantics.",
+      "handoffs": [
+        "domain-class-modeler",
+        "design-class-modeler",
+        "model-consistency-checker"
+      ]
+    },
+    {
+      "id": "inheritance-abstraction-reviewer",
+      "path": "skills/inheritance-abstraction-reviewer/SKILL.md",
+      "purpose": "Evaluate whether inheritance, interfaces, or composition better represent shared behavior and abstraction in the model.",
+      "handoffs": [
+        "design-class-modeler",
+        "domain-vs-design-model-differentiator",
+        "model-consistency-checker"
+      ]
+    },
+    {
+      "id": "domain-vs-design-model-differentiator",
+      "path": "skills/domain-vs-design-model-differentiator/SKILL.md",
+      "purpose": "Distinguish conceptual/domain modeling from design/implementation modeling so the right level of detail is used.",
+      "handoffs": [
+        "domain-class-modeler",
+        "design-class-modeler",
+        "model-consistency-checker"
+      ]
+    },
+    {
+      "id": "model-consistency-checker",
+      "path": "skills/model-consistency-checker/SKILL.md",
+      "purpose": "Check consistency across use cases, class models, sequence diagrams, activity diagrams, state models, and deployment assumptions.",
+      "handoffs": [
+        "requirements pack later",
+        "verification pack later",
+        "architecture pack later"
+      ]
+    },
+    {
+      "id": "scenario-to-uml-transformer",
+      "path": "skills/scenario-to-uml-transformer/SKILL.md",
+      "purpose": "Take a scenario or narrative and propose the most useful UML views to represent it, with a starter structure for each.",
+      "handoffs": [
+        "use-case-modeler",
+        "activity-diagram-builder",
+        "sequence-diagram-builder"
+      ]
+    }
+  ],
+  "templates": [
+    "templates/use-case-list-template.md",
+    "templates/use-case-description-template.md",
+    "templates/domain-class-diagram-template.md",
+    "templates/design-class-diagram-template.md",
+    "templates/activity-diagram-template.md",
+    "templates/sequence-diagram-template.md",
+    "templates/state-model-template.md",
+    "templates/deployment-diagram-template.md",
+    "templates/bce-mapping-template.md",
+    "templates/model-consistency-checklist.md"
+  ]
+}

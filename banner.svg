@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360">
+  <rect width="1200" height="360" fill="#6b21a8"/>
+  <circle cx="170" cy="90" r="140" fill="#d8b4fe" opacity="0.14"/>
+  <text x="70" y="145" fill="#faf5ff" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="700">uml-analysis-modelling-skills</text>
+  <text x="70" y="205" fill="#e9d5ff" font-family="Segoe UI, Arial, sans-serif" font-size="26">Use cases, class models, sequences, state models, and consistency checks.</text>
+</svg>
